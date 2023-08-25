@@ -65,6 +65,8 @@ CREATE TABLE plants (
 	id INT PRIMARY KEY,
     plantName VARCHAR(100),
     county_id INT,
+    Latitude DECIMAL(9, 6),
+    Longitude DECIMAL(9, 6),
     CONSTRAINT fk_plant_county
 		FOREIGN KEY (county_id) REFERENCES counties (id)
 );
